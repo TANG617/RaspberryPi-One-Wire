@@ -11,6 +11,7 @@ Use a single USB-C cable to transfer data between RaspberryPi 4B and iPad
 - 「副作用」小：树莓派可以在有线连接的基础上使用Wi-Fi上网，不冲突。
 
 ## 设备需求Require :
+
 1. 树莓派4B
 2. 带有USB-C的iPad（iPad Pro 2018、2020、2021；iPad Air 4）或其他带有USB-C的电脑、手机、安卓/鸿蒙平板
 PS：
@@ -20,7 +21,12 @@ PS：
 
 ## 配置方法：
 ### 1. 自动配置
-
+```shell
+git clone https://github.com/TANG617/RaspberryPi-One-Wire.git
+cd RaspberryPi-One-Wire
+chmod +x ./raspi_usb_c.sh
+sudo ./raspi_usb_c.sh
+```
 ### 2. 手动配置
 
 - 在`/boot/config.txt`末尾写入`dtoverlay=dwc2`。
@@ -31,7 +37,7 @@ PS：
 - 创建`/etc/dnsmasq.d/usb`，并写入
 
 
-```
+```shell
 interface=usb0
 dhcp-range=10.55.0.2,10.55.0.6,255.255.255.248,1h
 dhcp-option=3
@@ -39,7 +45,7 @@ leasefile-ro
 ```
 - 创建`/etc/network/interfaces.d/usb0`，并写入
 
-```
+```shell
 auto usb0
 allow-hotplug usb0
 iface usb0 inet static
@@ -48,7 +54,7 @@ iface usb0 inet static
 ```
 - 创建`/root/usb.sh`，并写入
 
-```
+```bash
 #!/bin/bash
 cd /sys/kernel/config/usb_gadget/
 mkdir -p pi4
