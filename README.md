@@ -4,8 +4,16 @@ Use a single USB-C cable to transfer data between RaspberryPi 4B and iPad
 仅仅使用一根USB-C to C的数据线来连接树莓派和iPad等设备，方便在外出等网络不方便的地方连接使用
 可以使用和Wi-Fi连接时的全部功能，包括但不限于：80端口网站，22端口SSH等其他任何服务
 
+#### Attention：由于个人开发，没有足够的测试设备，可能会遇到不可预知的问题，烦请在Issue提出。
+
+**功能实现演示：**
+
+<iframe src="//player.bilibili.com/player.html?aid=295481586&bvid=BV1GF411v7R6&cid=477385617&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
 ## 优势Advantages ：
-- 成本为零，适用面广：无论是USB3.0还是USB2.0的USB-C皆可；iPad（USB-C接口）、笔记本电、甚至安卓手机\平板，都适用
+
+- 成本为零，适用面广：~~无论是USB3.0还是USB2.0的USB-C皆可；iPad（USB-C接口）、笔记本电、甚至安卓手机\平板，都适用~~**当前遇到了一些问题，目前仅支持Apple的带有USB-C的设备（iPad、Mac），在连接安卓、鸿蒙、Windows设备时，无法自动识别并完成配置，我们仍然在寻找解决办法，也欢迎各位在GitHub讨论。**
 - 操作简单，可靠性高：每一次连接无需任何额外操作，连接即可；外出无需为手机热点无法连接而束手无策。
 - 功能全面：可以实现本地局域网的全部功能，无论是SSH终端还是VNC桌面，抑或是本地网页，都可以访问。
 - 「副作用」小：树莓派可以在有线连接的基础上使用Wi-Fi上网，不冲突。
@@ -13,14 +21,15 @@ Use a single USB-C cable to transfer data between RaspberryPi 4B and iPad
 ## 设备需求Require :
 
 1. 树莓派4B
-2. 带有USB-C的iPad（iPad Pro 2018、2020、2021；iPad Air 4）或其他带有USB-C的电脑、手机、安卓/鸿蒙平板
-PS：
+2. 带有USB-C的iPad（iPad Pro 2018、2020、2021；iPad Air 4）或~~~其他带有USB-C的电脑、手机、安卓/鸿蒙平板~~~
 已经测试且能够成功访问：
 `iPad Air 4（USB3.0）；MacBook Pro 2021（Thunderbolt4/USB4）`
 （我自己没有足够的设备完成测试，欢迎大家测试后在Issue放出结果）
 
-## 配置方法：
+## 配置方法(二者选择其一即可)：
+
 ### 1. 自动配置
+
 ```shell
 git clone https://github.com/TANG617/RaspberryPi-One-Wire.git
 cd RaspberryPi-One-Wire
