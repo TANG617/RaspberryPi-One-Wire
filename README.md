@@ -8,7 +8,7 @@ Use a single USB-C cable to transfer data between RaspberryPi 4B and iPad
 
 **功能实现演示：**
 
-<iframe src="//player.bilibili.com/player.html?aid=295481586&bvid=BV1GF411v7R6&cid=477385617&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+https://www.bilibili.com/video/BV1GF411v7R6/
 
 
 ## 优势Advantages ：
