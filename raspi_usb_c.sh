@@ -7,4 +7,4 @@ echo -e "interface=usb0\ndhcp-range=10.55.0.2,10.55.0.6,255.255.255.248,1h\ndhcp
 echo -e "auto usb0\nallow-hotplug usb0\niface usb0 inet static\n  address 10.55.0.1\n  netmask 255.255.255.248">> /etc/network/interfaces.d/usb0
 cp usb.sh /root/usb.sh
 chmod +x /root/usb.sh
-echo -e "/root/usb.sh\nexit 0" > /etc/rc.local 
+echo -e "#!/bin/bash\n/root/usb.sh\nexit 0" > /etc/rc.local 
