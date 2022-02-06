@@ -4,8 +4,10 @@ Use a single USB-C cable to transfer data between RaspberryPi 4B and iPad
 仅仅使用一根USB-C to C的数据线来连接树莓派和iPad等设备，方便在外出等网络不方便的地方连接使用
 可以使用和Wi-Fi连接时的全部功能，包括但不限于：80端口网站，22端口SSH等其他任何服务
 
-#### Attention：由于个人开发，没有足够的测试设备，可能会遇到不可预知的问题，烦请在Issue提出。
-方法来源：https://www.yuque.com/docs/share/37a2beac-f1db-4437-b5b8-117164af4dab?#
+#### Attention：
+* 由于个人开发，没有足够的测试设备，可能会遇到不可预知的问题，烦请在Issue提出。
+* 方法来源：https://www.yuque.com/docs/share/37a2beac-f1db-4437-b5b8-117164af4dab?#
+* GitHub初来乍到，如果有什么意见或者建议，感谢提出！
 
 **功能实现演示：**
 
